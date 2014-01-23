@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 HEllo Hello Hello Hello bye
+=======
+HEllo Hello Hello Hello Hello ;dlsfkajdsakl;fadjs 
+>>>>>>> Ozi
