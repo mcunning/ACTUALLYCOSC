@@ -1,7 +1,0 @@
-Hello,
-I am just testing to make sure I fully understand how to use my branch
-and the master branch of our github. I will upload this file to the 
-master branch, and then delete it once I've confirmed that it is there.
-
-Cheers,
-Barrett
