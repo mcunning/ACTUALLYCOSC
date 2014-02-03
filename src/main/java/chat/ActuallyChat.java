@@ -1,13 +1,17 @@
 package main.java.chat;
 
+import java.util.Scanner;
+
 public class ActuallyChat implements Chat
 {
     boolean chat;
     Responder responder;
+    Scanner scan;
 
     public ActuallyChat()
     {
         chat = true;
+        scan = new Scanner( System.in );
         // TODO
     }
 
@@ -22,15 +26,19 @@ public class ActuallyChat implements Chat
     @Override
     public String getSentence()
     {
-        // TODO Auto-generated method stub
-        return null;
+        return scan.nextLine();
     }
 
+    private void print( String string )
+    {
+    	System.out.println( string );
+    }
     @Override
     public void chat()
     {
         // TODO greet;
-
+    	print( "Welcome to Chat." );
+    	
         // TODO Auto-generated method stub
         while( chat )
         {
