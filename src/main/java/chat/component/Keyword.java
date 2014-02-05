@@ -29,7 +29,15 @@ public class Keyword
         this.type = type;
         this.sentenceMatch = sentenceMatch;
         this.wordMatch = wordMatch;
-        Collections.copy( this.responses, responses );
+        
+        /*ERROR Exception in thread "main" java.lang.NullPointerException
+    	at java.util.Collections.copy(Unknown Source)
+    	at main.java.chat.component.Keyword.<init>(Keyword.java:32)
+    	at main.java.chat.util.ReadABook.fileReader(ReadABook.java:163)
+    	at main.java.chat.Main.main(Main.java:11)*/
+
+        //Collections.copy( this.responses, responses );
+        //this.responses.addAll(responses);
         this.weight = weight;
     }
 
@@ -91,5 +99,24 @@ public class Keyword
     public void setWeight( int weight )
     {
         this.weight = weight;
+    }
+
+    public String toString()
+    {
+    	String str = "Keywords: ";
+    	if(keywords != null)
+    		for(String s: keywords)
+    			str += s + " | ";
+    	else 
+    		str += "null";
+    	str += "\nType:" + type + "\nSentence Match: " + sentenceMatch + "\nWord Match: " + wordMatch + "\n";
+    	str += "Responses: \n\n";
+    	if(responses != null)
+    		for(Response s: responses)
+    			str += s.toString() + "\n";
+    	else 
+    		str += "null\n";
+    	str += "Weight:" + weight + "\n";
+        return str;
     }
 }
