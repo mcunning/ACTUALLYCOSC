@@ -42,10 +42,6 @@ public class ReadABook {
 		//This will contain each line of the read file
 		String KeywordLine;
 		
-		String[] ss = {"hi"};
-		
-		System.out.println(new Response(null, QuestionFlag.QUESTION_ONLY, ss, 0));
-		
 		
 		try{
 			//open the file called filename
@@ -65,10 +61,6 @@ public class ReadABook {
 				
 				//Parse the initial keyword section
 				String[] keywordSection = subStrings.get(0).split(subKeyDelims);
-				/*System.out.println("Keyword Section:");
-				for(String s: keywordSection){
-					System.out.println(s);
-				}*/
 				
 				//covert strings to enums
 				
@@ -103,12 +95,8 @@ public class ReadABook {
 				
 				//Parse the main keywords out of the main keyword section
 			    String[] mainKeywords = keywordSection[0].split(ORDelims);
-			    /*System.out.println("Main kewords:");
-				for(String s: mainKeywords){
-					System.out.println(s);
-				}*/
 				
-				//deal with each response **WARNING THERE IS AN ERROR HERE
+				//deal with each response 
 			    for(int i = 1; i < subStrings.size(); i++){
 					//split up the specific response
 					StringTokenizer st2 = new StringTokenizer(subStrings.get(i), subresponseDelims);
@@ -119,7 +107,7 @@ public class ReadABook {
 				    }
 					
 					//if there is a variable at the beginning do, else
-					if((subResponses.size() == 3 && i < subStrings.size()-1) || (subResponses.size() == 4 && i == subStrings.size()-1)){
+					if((subResponses.size() == 4)){
 					    //split keywords
 						String[] responseKeywords = subResponses.get(0).split(ORDelims);
 						//split responses
@@ -155,23 +143,23 @@ public class ReadABook {
 					}
 					subResponses.clear();
 			    }
-
-				//for(Response r : responsesTemplate)
-					//System.out.println(r);
 			    
-			   //something is wrong with this add
+			   //add the keyword read form the line to the list
 			    keys.add(new Keyword(mainKeywords, keyType, matchType, matchType2, responsesTemplate, Integer.parseInt(keywordSection[4])) );
+			    
+			    //clear the arrays to be reused in the loop
 			    responsesTemplate.clear();
 				subStrings.clear();
 				
-				for(Keyword k : keys)
-					System.out.println(k);
 			    
 			}
+			//close the file
 			br.close();
 		}
-		catch(Exception e){
+		catch(Exception e){ //catch any errors thrown
+			//print out the error
 			System.out.println("Error reading file " + e.getMessage());
+			//exit the program
 			System.exit(1);
 			}
 		return keys;

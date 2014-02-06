@@ -1,1 +1,0 @@
-hi|hello#word#contains#starts-with#520#[R]friend\\no\\hi friend!|hello there[R]\\no\\go away\\40

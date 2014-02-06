@@ -1,0 +1,4 @@
+hi|hello#word#contains#starts-with#520#[R]friend|derp\\no-preference\\hi friend!|hello there\\50[R]\\no\\go away\\40
+hi|hello#word#contains#starts-with#520#[R]friend|derp\\no\\hi friend!|hello there\\50[R]\\no\\go away\\40
+hi|hello#word#contains#starts-with#520#[R]friend|derp\\no\\hi friend!|hello there\\50[R]\\no\\go away\\40
+hi|hello#word#contains#starts-with#520#[R]friend|derp\\no\\hi friend!|hello there\\50[R]\\no\\go away\\40

@@ -65,7 +65,10 @@ public class Response
     	String str = "Keywords: ";
     	if(keywords != null)
     		for(String s: keywords)
-    			str += s + " | ";
+    			if (!s.equals(keywords[keywords.length - 1]))
+    				str += s + " | ";
+    			else
+    				str += s;
     	else 
     		str += "null";
     	str += "\nQuestionFlag: " + questionFlag + "\n";

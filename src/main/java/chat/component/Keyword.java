@@ -1,6 +1,6 @@
 package main.java.chat.component;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Keyword
@@ -29,15 +29,8 @@ public class Keyword
         this.type = type;
         this.sentenceMatch = sentenceMatch;
         this.wordMatch = wordMatch;
-        
-        /*ERROR Exception in thread "main" java.lang.NullPointerException
-    	at java.util.Collections.copy(Unknown Source)
-    	at main.java.chat.component.Keyword.<init>(Keyword.java:32)
-    	at main.java.chat.util.ReadABook.fileReader(ReadABook.java:163)
-    	at main.java.chat.Main.main(Main.java:11)*/
-
-        //Collections.copy( this.responses, responses );
-        //this.responses.addAll(responses);
+        this.responses = new ArrayList<Response>();
+        this.responses.addAll(responses);
         this.weight = weight;
     }
 
@@ -106,14 +99,17 @@ public class Keyword
     	String str = "Keywords: ";
     	if(keywords != null)
     		for(String s: keywords)
-    			str += s + " | ";
+    			if (!s.equals(keywords[keywords.length - 1]))
+    				str += s + " | ";
+    			else
+    				str += s;
     	else 
     		str += "null";
     	str += "\nType:" + type + "\nSentence Match: " + sentenceMatch + "\nWord Match: " + wordMatch + "\n";
     	str += "Responses: \n\n";
     	if(responses != null)
-    		for(Response s: responses)
-    			str += s.toString() + "\n";
+    		for(Response r: responses)
+    			str += r.toString() + "\n";
     	else 
     		str += "null\n";
     	str += "Weight:" + weight + "\n";
