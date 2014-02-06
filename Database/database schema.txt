@@ -11,10 +11,9 @@ CREATE TABLE Keywords(
 CREATE TABLE Responses(
 	ref_id INTEGER, 
 	keywords VARCHAR(20),
-	question ENUM(‘yes’, ‘no’, ‘no-preference’),
+	question ENUM('yes', 'no', 'no-preference'),
 	response VARCHAR(200),
 	weight INTEGER,
-	PRIMARY KEY(ref_id),
 	FOREIGN KEY (ref_id) REFERENCES Keywords(id)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE

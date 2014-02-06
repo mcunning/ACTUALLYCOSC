@@ -8,5 +8,5 @@ public interface Responder
      */
     void readConfigFile();
 
-    void respond( String inputSentence );
+    String respond( String inputSentence );
 }
