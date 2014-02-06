@@ -1,0 +1,2 @@
+hello#word#contains#contains#1#[R]hello\\no\\hello\\1[R]hello\\no\\hi\\1[R]hello\\no-preference\\Greetings!\\1
+hi#word#contains#contains#1#[R]hi|hello|hey\\no\\Hello.\\1

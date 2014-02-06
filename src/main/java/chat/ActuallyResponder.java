@@ -1,5 +1,6 @@
 package main.java.chat;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -17,7 +18,12 @@ public class ActuallyResponder implements Responder {
 
 	@Override
 	public void readConfigFile() {
+<<<<<<< HEAD
 		ReadABook.fileReader("src\\main\\java\\chat\\input\\input.txt");
+=======
+        ActuallyResponder.keywords = new ArrayList<Keyword>();
+        ActuallyResponder.keywords.addAll(ReadABook.fileReader("src\\main\\java\\chat\\input\\input.txt"));
+>>>>>>> origin/master
 	}
 
 	@Override

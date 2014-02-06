@@ -6,7 +6,6 @@ public class Main
     {
         Chat chat = new ActuallyChat();
         chat.initialize( new ActuallyResponder() );
-
         chat.chat();
     }
 }

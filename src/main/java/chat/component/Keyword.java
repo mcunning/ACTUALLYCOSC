@@ -1,6 +1,6 @@
 package main.java.chat.component;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Keyword
@@ -29,7 +29,8 @@ public class Keyword
         this.type = type;
         this.sentenceMatch = sentenceMatch;
         this.wordMatch = wordMatch;
-        Collections.copy( this.responses, responses );
+        this.responses = new ArrayList<Response>();
+        this.responses.addAll(responses);
         this.weight = weight;
     }
 
@@ -91,5 +92,27 @@ public class Keyword
     public void setWeight( int weight )
     {
         this.weight = weight;
+    }
+
+    public String toString()
+    {
+    	String str = "Keywords: ";
+    	if(keywords != null)
+    		for(String s: keywords)
+    			if (!s.equals(keywords[keywords.length - 1]))
+    				str += s + " | ";
+    			else
+    				str += s;
+    	else 
+    		str += "null";
+    	str += "\nType:" + type + "\nSentence Match: " + sentenceMatch + "\nWord Match: " + wordMatch + "\n";
+    	str += "Responses: \n\n";
+    	if(responses != null)
+    		for(Response r: responses)
+    			str += r.toString() + "\n";
+    	else 
+    		str += "null\n";
+    	str += "Weight:" + weight + "\n";
+        return str;
     }
 }

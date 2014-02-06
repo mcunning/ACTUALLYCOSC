@@ -59,4 +59,25 @@ public class Response
     {
         this.weight = weight;
     }
+
+    public String toString()
+    {
+    	String str = "Keywords: ";
+    	if(keywords != null)
+    		for(String s: keywords)
+    			if (!s.equals(keywords[keywords.length - 1]))
+    				str += s + " | ";
+    			else
+    				str += s;
+    	else 
+    		str += "null";
+    	str += "\nQuestionFlag: " + questionFlag + "\n";
+    	str += "Responses: \n";
+    	if(responses != null)
+    		for(String s: responses)
+    			str += s + "\n";
+    	else 
+    		str += "null";
+        return str;
+    }
 }
