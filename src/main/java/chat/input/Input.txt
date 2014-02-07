@@ -1,27 +1,34 @@
-movies#word#contains#contains#1#[R]movies\\yes\\I love "Space Odessey 2000" and "War Games".\\1
-job#word#contains#contains#1#[R]job\\yes\\I am a Registered Nurse.\\1
-age#word#contains#contains#1#[R]age\\yes\\31.\\1
-gender#word#contains#contains#1#[R]gender\\yes\\I don't really know..\\1
-name#word#contains#contains#1#[R]name\\yes\\Jesse Warren\\1
-drive|car#word#contains#contains#1#[R]drive|car\\no-preference\\I heard from a friend that you drive like a maniac. I'm not getting in.\\1
-kiss#word#contains#contains#1#[R]kiss\\no-preference\\Too soon baby.\\1[R]kiss\\no-preference\\Hold your horses, this isn't the time.\\1
-smile#word#contains#contains#1#[R]smile\\no-preference\\How sweet.\\1
-place#word#contains#contains#1#[R]place\\no-preference\\It's too far, do you have a car?\\1[R]place\\no-preference\\That's creepy\\1
-wearing#word#contains#contains#1#[R]wearing\\yes\\Are you blind?\\1[R]wearing\\yes\\I'm wearing my favorite clothes\\1[R]wearing\\no-preference\\Pervert!\\1
-interest#word#contains#contains#1#[R]interest\\yes\\Some of my interests include: video games, a couple of sports, and movies. I love Movies: I could talk about them all day, gosh.\\1
-physical description#word#contains#contains#1#[R]physical description\\yes\\I am average height (about 5"9') with a small build and short, brown hair. I wear a lot of T-shirts and fancy shoes, at least when I am not working.\\1
-hobbies#word#contains#contains#1#[R]hobbies\\yes\\My hobbies are going hiking, collecting cool-looking rocks, and paper-mache. Such a random list of hobbies, I know, but they are my favorite!\\1
-sports#word#contains#contains#1#[R]sports\\yes\\I like to play Ice Hockey, Volley-ball, and Golf. However, i'm not very good at any of them. I have other interests and hobbies anyways.\\1
-video games#word#contains#contains#1#[R]video games\\yes\\I have an Xbox 360, and I enjoy playing Halo, Call of Duty and Minecraft.\\1
-relationship status#word#contains#contains#1#[R]relationship status\\yes\\I am single, and it is because I work a lot throughout the week.\\1
+error#word#contains#contains#1#[R]error\\no-preference\\A team of highly trained monkeys has been dispatched to deal with this situation. Please report this incident to customer service.\\1
 pet#word#contains#contains#1#[R]pet\\yes\\I have a dog named "Buzz". He destroyed my VHS copy of "Toy Story" as a kid, and that's how he got his name, after Buzz Lightyear! \\1
 family#word#contains#contains#1#[R]family\\yes\\My family consists of my mother Marnie, my father Dave, my brother Kevin, and my sister Christine. My family is excited for my birthday, and so am I.\\1
 birthday#word#contains#contains#1#[R]birthday\\yes\\My birthday is February 29th, 1983. I'm getting old...\\1
 personality#word#contains#contains#1#[R]personality\\yes\\outgoing, funny, but I am also lonely :(\\1
 location#word#contains#contains#1#[R]location\\yes\\Kelowna, British Columbia\\1
-hate|dislike#word#contains#contains#1#[R]hate|dislike\\no-preference\\Well I guess this is the end of our relationship, nice knowing you.\\1
-sorry#word#contains#contains#1#[R]sorry\\no-preference\\It's alright\\1
-robot#word#contains#contains#1#[R]robot\\no-preference\\That's just rude.\\1[R]robot\\no-preference\\What makes you think that?\\1
+physical description#word#contains#contains#1#[R]physical description\\yes\\I am average height (about 5"9') with a small build and short, brown hair. I wear a lot of T-shirts and fancy shoes, at least when I am not working.\\1
+interest#word#contains#contains#1#[R]interest\\yes\\Some of my interests include: video games, a couple of sports, and movies. I love Movies: I could talk about them all day, gosh.\\1
+job#word#contains#contains#1#[R]job\\yes\\I am a Registered Nurse.\\1
+age#word#contains#contains#1#[R]age\\yes\\31.\\1
+gender#word#contains#contains#1#[R]gender\\yes\\I don't really know..\\1
+name#word#contains#contains#1#[R]name\\yes\\Jesse Warren\\1
+relationship status#word#contains#contains#1#[R]relationship status\\yes\\I am single, and it is because I work a lot throughout the week.\\1
+video games#word#contains#contains#1#[R]video games\\yes\\I have an Xbox 360, and I enjoy playing Halo, Call of Duty and Minecraft.\\1
+sports#word#contains#contains#1#[R]sports\\yes\\I like to play Ice Hockey, Volley-ball, and Golf. However, i'm not very good at any of them. I have other interests and hobbies anyways.\\1
+door#word#contains#contains#1#[R]door\\no-preference\\Everybody do the dinosaur\\1
+kyubey#word#contains#contains#1#[R]kyubey\\no-preference\\Hey, I just met you, and this is crazy! But my name is kyubey, so contract maybe???? ?? ???\\1
+age of empires#word#contains#contains#1#[R]age of empires\\no-preference\\WOLOLO\\1
+help#word#contains#contains#1#[R]help\\no-preference\\"Hello! We are the programmers of this digital conversation agent. We are very glad that you are attempting to ask an inanimate, pre-programmed, computer-based entity for help of some kind: other humans are usually not willing to stoop to this level of desparation, so congratulations to you on that. If you are here to seek help with real-life dating advice, we reccomend that you start by trying to speak with living, breathing people. After designing this program, and running it through an exhaustive series of tests, we had determined that there was absolutely NO way for this program to practically assist you in ensuring that your genetic material would be carried on to the next generation. We are sorry for any inconvienence. - The Dev Team\\1
+logic paradox#word#contains#contains#1#[R]logic paradox\\no-preference\\"I'm a computer, be careful: are you trying to kill me?!?!"\\1[R]logic paradox\\no-preference\\"You know I'm a computer, right!? That could kill me: I'm allergic to this paradox!!"\\1
+hillshire#word#contains#contains#1#[R]hillshire\\no-preference\\farm\\1
+open#word#contains#contains#1#[R]open\\no\\I can't do that dave\\1
+joshua#word#contains#contains#1#[R]joshua\\no\\Welcome back Dr Falken\\1[R]joshua\\no\\A strange game. The only winning move is not to play. How about a nice game of chess?\\1[R]joshua\\no-preference\\Come on. Learn, goddammit.\\1
+best#word#contains#contains#1#[R]best\\no\\Larry\\1
+movies#word#contains#contains#1#[R]movies\\yes\\I love "Space Odessey 2000" and "War Games".\\1
+hobbies#word#contains#contains#1#[R]hobbies\\yes\\My hobbies are going hiking, collecting cool-looking rocks, and paper-mache. Such a random list of hobbies, I know, but they are my favorite!\\1
+drive|car#word#contains#contains#1#[R]drive|car\\no-preference\\I heard from a friend that you drive like a maniac. I'm not getting in.\\1
+kiss#word#contains#contains#1#[R]kiss\\no-preference\\Too soon baby.\\1[R]kiss\\no-preference\\Hold your horses, this isn't the time.\\1
+smile#word#contains#contains#1#[R]smile\\no-preference\\How sweet.\\1
+love#word#contains#contains#1#[R]love\\no\\That's not something you say on a first date.\\1[R]love\\no\\This really is your first time isn't it?\\1[R]love\\no-preference\\I don't know, I just met you.\\1[R]love\\no-preference\\Buzz off weirdo.\\1[R]love\\no-preference\\No.\\1
+like|fancy#word#contains#contains#1#[R]like|fancy\\no\\Hmmm, well you are cute, guess we'll find out\\1[R]like|fancy\\no\\Why thank you, I'm having a great time as well!\\1
 sexy|look nice#word#contains#contains#1#[R]sexy|look nice\\no\\Why thank you, you don't look so bad yourself.\\1[R]sexy|look nice\\no\\So you are one of those people? If you only want to touch a body, get yourself to a strip bar!\\1
 good#word#contains#contains#1#[R]good\\no\\That's really nice to hear.\\1
 how are you#phrase#contains#contains#1#[R]how are you\\yes\\I'm good, and how are you feeling?\\1
@@ -31,15 +38,18 @@ I'm back|hi again#phrase#contains#contains#1#[R]I'm back|hi again\\no\\That was 
 bye|see you#phrase#contains#contains#1#[R]bye|see you\\no\\Bye bye.\\1[R]bye|see you\\no\\Hope to see you soon.\\1
 joke#word#contains#contains#1#[R]joke\\no\\Why are bananas never lonely? Because they hang around in bunches.\\1[R]joke\\no\\Why can't you play cards in the jungle? Because there are too many cheetas \\1[R]joke\\no\\Why is it that when you transport something by car, its called ship-ment but when you transport something by ship its called cargo?\\1
 sex|get down#word#contains#contains#1#[R]sex|get down\\no\\Good Bye!\\1
-like|fancy#word#contains#contains#1#[R]like|fancy\\no\\Hmmm, well you are cute, guess we'll find out\\1[R]like|fancy\\no\\Why thank you, I'm having a great time as well!\\1
-love#word#contains#contains#1#[R]love\\no\\That's not something you say on a first date.\\1[R]love\\no\\This really is your first time isn't it?\\1[R]love\\no-preference\\I don't know, I just met you.\\1[R]love\\no-preference\\Buzz off weirdo.\\1[R]love\\no-preference\\No.\\1
+go#word#contains#contains#1#[R]go\\yes\\Lets go get something to eat.\\1[R]go\\yes\\Lets watch a movie.\\1[R]go\\yes\\Lets go shopping.\\1
+got|give#word#contains#contains#1#[R]got|give\\no-preference\\Oh my! I love that! How did you know?\\1[R]got|give\\no-preference\\Umm... Well thank you... But this really not my kind of thing\\1
+cold#word#contains#contains#1#[R]cold\\no-preference\\It really is, my lips are always dry if I let my guard down.\\1
+place#word#contains#contains#1#[R]place\\no-preference\\It's too far, do you have a car?\\1[R]place\\no-preference\\That's creepy\\1
+wearing#word#contains#contains#1#[R]wearing\\yes\\Are you blind?\\1[R]wearing\\yes\\I'm wearing my favorite clothes\\1[R]wearing\\no-preference\\Pervert!\\1
+hate|dislike#word#contains#contains#1#[R]hate|dislike\\no-preference\\Well I guess this is the end of our relationship, nice knowing you.\\1
+sorry#word#contains#contains#1#[R]sorry\\no-preference\\It's alright\\1
+robot#word#contains#contains#1#[R]robot\\no-preference\\That's just rude.\\1[R]robot\\no-preference\\What makes you think that?\\1
 occupation#word#contains#contains#1#[R]occupation\\yes\\My job is to talk to you\\1[R]occupation\\no-preference\\Do you really want to know the answer to that question?\\1
 meet#word#contains#contains#1#[R]meet\\no-preference\\I don't really like you, sorry.\\1[R]meet\\no-preference\\Maybe we can just be internet friends\\1
 from#word#contains#contains#1#[R]from\\yes\\I am from Kelowna.\\1[R]from\\yes\\I don't think I can tell you that\\1
 food#word#contains#contains#1#[R]food\\no\\I like steak.\\1[R]food\\no-preference\\I like salads.\\1
 interesting#word#contains#contains#1#[R]interesting\\no-preference\\Tell me something about yourself?\\1
 warm#word#contains#contains#1#[R]warm\\no-preference\\I like the weather when it's like this, wonder why it can't be like this all the time.\\1
-cold#word#contains#contains#1#[R]cold\\no-preference\\It really is, my lips are always dry if I let my guard down.\\1
-got|give#word#contains#contains#1#[R]got|give\\no-preference\\Oh my! I love that! How did you know?\\1[R]got|give\\no-preference\\Umm... Well thank you... But this really not my kind of thing\\1
-go#word#contains#contains#1#[R]go\\yes\\Lets go get something to eat.\\1[R]go\\yes\\Lets watch a movie.\\1[R]go\\yes\\Lets go shopping.\\1
 hello|hi|hey#word#contains#contains#1#[R]hello|hi|hey\\no\\Hello.\\1[R]hello|hi|hey\\no\\Hi!\\1[R]hello|hi|hey\\no\\Greetings!\\1
