@@ -7,6 +7,9 @@ import main.java.chat.component.Response;
 
 public class SentenceParser {
 
+	//Class Instances
+	Random randgen=new Random();
+	
 	//Default Constructor
 	public SentenceParser(){
 		
@@ -112,8 +115,12 @@ public class SentenceParser {
 			//- and for each word of "theStringArray" (i.e: user's parsed input),-
 			for(int s=0;s<theStringArray.length;s++){
 				if(k.matches(theStringArray[s])){
-					//-, find a match and set the "finalResponse" string to an appropriate (!@#randgen?) response string.
-					finalResponse=theResponse.getResponses()[0]; //!@#$ change note: randgen removed
+					//-, find a match and set the "finalResponse" string to an appropriate (randomly selected) response string.
+//					//!@#randgen
+//					int tempNum=randgen.nextInt(theResponse.getResponses().length-1);
+//					finalResponse=theResponse.getResponses()[tempNum]; 
+					//non-randomly-selected
+					finalResponse=theResponse.getResponses()[0];
 					break searchResponse;
 				}
 			}//s
@@ -121,8 +128,12 @@ public class SentenceParser {
 		
 		//conditional check to ensure "finalResonse"!=null. This sets a resopnse in case of no secondary keyword hit.
 		if(finalResponse==null){
-			//randomly generated number (appropriate to response[]) used to set 'finalResponse' string to the 'temp'th element of responses
-			finalResponse=theResponse.getResponses()[0]; //!@#$ change note: reoved randgen
+			//randomly generated number (appropriate to response[]) used to set a "finalResponse" string to the "tempNum'th element of responses
+//			//!@#randgen
+//			int tempNum=randgen.nextInt(theResponse.getResponses().length-1);
+//			finalResponse=theResponse.getResponses()[tempNum]; 
+			//non-random-select
+			finalResponse=theResponse.getResponses()[0];
 		}
 		
 		//Return the string containing the computer's appropriate statement.

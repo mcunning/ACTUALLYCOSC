@@ -9,10 +9,14 @@ import main.java.chat.util.SentenceParser;
 import main.java.chat.util.ReadABook;
 
 public class ActuallyResponder implements Responder {
+	
+	//Class Instances
 	private static List<Keyword> keywords;
+	Random randgen=new Random();
 
+	//Default Constructor
 	public ActuallyResponder() {
-		// TODO
+	
 	}
 
 	@Override
@@ -52,8 +56,12 @@ public class ActuallyResponder implements Responder {
 					break;
 				}else if(k==keywords.size()-1){
 					//If no keywords have been identified (i.e: match==null) by this last iteration, it is about to break the "keywords" for loop. 
-					//So, we need to assign "match" to something before it leaves. The first keywords keyword element is assigned to "match".
-					match=keywords.get(0); //!@#$place randgen
+					//So, we need to assign "match" to something before it leaves. A random keywords keyword element is assigned to "match".
+//					//!@#randgen
+//					int tempNum=randgen.nextInt(keywords.size()-1);
+//					match=keywords.get(tempNum); 
+					//non-randomly-selected
+					match=keywords.get(0);
 				}
 			}//k
 			
@@ -69,9 +77,13 @@ public class ActuallyResponder implements Responder {
 					done=true;
 					break;
 				}else if(r==match.getResponses().size()-1){
-					//If no "responseMatch" strings have been identified (i.e: responseMatch==null), it is set to the first response[] string.
-					//!@#$change notes: removed randgen
+					//If no "responseMatch" strings have been identified (i.e: responseMatch==null), it is set to a random response[] string.
+//					//!@#randgen
+//					int tempNum=randgen.nextInt(match.getResponses().size()-1);
+//					responseMatch=match.getResponses().get(tempNum).toString();
+					//non-randomly-selected
 					responseMatch=match.getResponses().get(0).toString();
+					
 					//Now, with a value for responseMatch, set "done"=true to stop the whole ActuallyResponder.respond() method.
 					done=true;
 				}
