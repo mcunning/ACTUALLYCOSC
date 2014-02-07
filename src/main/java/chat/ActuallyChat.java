@@ -13,7 +13,7 @@ public class ActuallyChat implements Chat
         chat = true;
         scan = new Scanner( System.in );
         // TODO
-    }
+    }//Constructor
 
     @Override
     public void initialize( Responder responderIn )
@@ -21,30 +21,37 @@ public class ActuallyChat implements Chat
         responder = responderIn;
         responder.readConfigFile();
 
-    }
+    }//initialize
 
     @Override
     public String getSentence()
     {
         return scan.nextLine();
-    }
+    }//getSentence()
 
     private void print( String string )
     {
     	System.out.println( string );
-    }
+    }//print
     @Override
     public void chat()
     {
-        // TODO greet;
+        //greet;
     	print( "Welcome to Chat." );
     	
-        // TODO Auto-generated method stub
+        //chat
         while( chat )
         {
             String sentence = getSentence();
 
-            System.out.println(responder.respond(sentence));
-        }
-    }
+            try{
+            	String output=responder.respond(sentence);
+            	System.out.println(output);
+            }catch(IllegalArgumentException x){
+            	System.out.println("I don't understand how to respond: an IllegalArgument keeps calling me.");
+            }catch(NullPointerException x){
+            	System.out.println("I missed that. Let's pretend that last thing was null.");
+            }//try/catch
+        }//while
+    }//chat
 }
