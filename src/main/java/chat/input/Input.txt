@@ -1,3 +1,29 @@
-hello#word#contains#contains#1#[R]hello\\no\\hello\\1[R]hello\\no\\hi\\1[R]hello\\no-preference\\Greetings!\\1
-sex|get down#phrase#contains#contains#1#[R]sex|get down\\yes\\Good Bye!\\1
-hi#word#contains#contains#2#[R]hi|hello|hey\\no\\Hello.\\1
+hello|hi|hey#word#contains#contains#1#[R]hello|hi|hey\\no\\Hello.\\1[R]hello|hi|hey\\no\\Hi!\\1[R]hello|hi|hey\\no\\Greetings!\\1
+interesting#word#contains#contains#1#[R]interesting\\no-preference\\Tell me something about yourself?\\1
+food#word#contains#contains#1#[R]food\\no\\I like steak.\\1[R]food\\no-preference\\I like salads.\\1
+from#word#contains#contains#1#[R]from\\yes\\I am from Kelowna.\\1[R]from\\yes\\I don't think I can tell you that\\1
+meet#word#contains#contains#1#[R]meet\\no-preference\\I don't really like you, sorry.\\1[R]meet\\no-preference\\Maybe we can just be internet friends\\1
+occupation#word#contains#contains#1#[R]occupation\\yes\\My job is to talk to you\\1[R]occupation\\no-preference\\Do you really want to know the answer to that question?\\1
+robot#word#contains#contains#1#[R]robot\\no-preference\\That's just rude.\\1[R]robot\\no-preference\\What makes you think that?\\1
+sorry#word#contains#contains#1#[R]sorry\\no-preference\\It's alright\\1
+hate|dislike#word#contains#contains#1#[R]hate|dislike\\no-preference\\Well I guess this is the end of our relationship, nice knowing you.\\1
+wearing#word#contains#contains#1#[R]wearing\\yes\\Are you blind?\\1[R]wearing\\yes\\I'm wearing my favorite clothes\\1[R]wearing\\no-preference\\Pervert!\\1
+place#word#contains#contains#1#[R]place\\no-preference\\It's too far, do you have a car?\\1[R]place\\no-preference\\That's creepy\\1
+smile#word#contains#contains#1#[R]smile\\no-preference\\How sweet.\\1
+kiss#word#contains#contains#1#[R]kiss\\no-preference\\Too soon baby.\\1[R]kiss\\no-preference\\Hold your horses, this isn't the time.\\1
+warm#word#contains#contains#1#[R]warm\\no-preference\\I like the weather when it's like this, wonder why it can't be like this all the time.\\1
+cold#word#contains#contains#1#[R]cold\\no-preference\\It really is, my lips are always dry if I let my guard down.\\1
+got|give#word#contains#contains#1#[R]got|give\\no-preference\\Oh my! I love that! How did you know?\\1[R]got|give\\no-preference\\Umm... Well thank you... But this really not my kind of thing\\1
+sex|get down#word#contains#contains#1#[R]sex|get down\\no\\Good Bye!\\1
+joke#word#contains#contains#1#[R]joke\\no\\Why are bananas never lonely? Because they hang around in bunches.\\1[R]joke\\no\\Why can't you play cards in the jungle? Because there are too many cheetas \\1[R]joke\\no\\Why is it that when you transport something by car, its called ship-ment but when you transport something by ship its called cargo?\\1
+bye|see you#phrase#contains#contains#1#[R]bye|see you\\no\\Bye bye.\\1[R]bye|see you\\no\\Hope to see you soon.\\1
+I'm back|hi again#phrase#contains#contains#1#[R]I'm back|hi again\\no\\That was quick.\\1[R]I'm back|hi again\\no\\Nice seeing you again.\\1
+eat|dinner|lunch|brunch|breakfast|supper#word#contains#contains#1#[R]eat|dinner|lunch|brunch|breakfast|supper\\yes\\OK lets go! Only if you're paying.\\1[R]eat|dinner|lunch|brunch|breakfast|supper\\yes\\Love to, I'm so hungry.\\1[R]eat|dinner|lunch|brunch|breakfast|supper\\yes\\No thanks, I already ate\\1
+make|cook#word#contains#contains#1#[R]make|cook\\yes\\I'm sorry, that really isn't my speciality\\1
+how are you#phrase#contains#contains#1#[R]how are you\\yes\\I'm good, and how are you feeling?\\1
+good#word#contains#contains#1#[R]good\\no\\That's really nice to hear.\\1
+sexy|look nice#word#contains#contains#1#[R]sexy|look nice\\no\\Why thank you, you don't look so bad yourself.\\1[R]sexy|look nice\\no\\So you are one of those people? If you only want to touch a body, get yourself to a strip bar!\\1
+like|fancy#word#contains#contains#1#[R]like|fancy\\no\\Hmmm, well you are cute, guess we'll find out\\1[R]like|fancy\\no\\Why thank you, I'm having a great time as well!\\1
+love#word#contains#contains#1#[R]love\\no\\That's not something you say on a first date.\\1[R]love\\no\\This really is your first time isn't it?\\1[R]love\\no-preference\\I don't know, I just met you.\\1[R]love\\no-preference\\Buzz off weirdo.\\1[R]love\\no-preference\\No.\\1
+go#word#contains#contains#1#[R]go\\yes\\Lets go get something to eat.\\1[R]go\\yes\\Lets watch a movie.\\1[R]go\\yes\\Lets go shopping.\\1
+drive|car#word#contains#contains#1#[R]drive|car\\no-preference\\I heard from a friend that you drive like a maniac. I'm not getting in.\\1
