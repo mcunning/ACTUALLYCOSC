@@ -102,7 +102,6 @@ public class SentenceParser {
 	public String compareKeywordResponsesToInput(Response theResponse,String[] theStringArray){
 		//Instances
 		String finalResponse=null;
-		Random randgen=new Random();
 		
 		//Now dealing with the individual responses of the matched keyword, we can match the contained string[] keywords for further identity
 		searchResponse:
@@ -118,8 +117,7 @@ public class SentenceParser {
 		//conditional check to ensure 'finalResonse'!=null. This sets a random resopnse in case of no secondary keyword hit.
 		if(finalResponse==null){
 			//randomly generated number (appropriate to response[]) used to set 'finalResponse' string to the 'temp'th element of responses
-			int temp=randgen.nextInt(theResponse.getResponses().length-1);
-			finalResponse=theResponse.getResponses()[temp];
+			finalResponse=theResponse.getResponses()[0]; //!@#$ change note: reoved randgen
 		}
 		
 		//end

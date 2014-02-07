@@ -71,9 +71,8 @@ public class ActuallyResponder implements Responder {
 					break;
 				}else if(r==match.getResponses().size()-1){
 					//if responseMatch is unset by end of method
-					Random randgen=new Random();
-					int temp=randgen.nextInt(match.getResponses().size()-1);
-					responseMatch=match.getResponses().get(temp).toString();
+					//!@#$change notes: removed randgen
+					responseMatch=match.getResponses().get(0).toString();
 					//done=true
 					done=true;
 				}
