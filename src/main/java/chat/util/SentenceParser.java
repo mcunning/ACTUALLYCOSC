@@ -7,13 +7,10 @@ import main.java.chat.component.Response;
 
 public class SentenceParser {
 
-	// Class Instance Variables
-	//public boolean isQuestion, atEnd, atStart, contains = false;
-
 	//Default Constructor
 	public SentenceParser(){
 		
-	}
+	}//sentenceParser
 	
 	
 	// User Input Parser
@@ -47,6 +44,7 @@ public class SentenceParser {
 					break;
 				}//if
 			}//forS
+			break;
 			
 		case STARTS_WITH:
 			//for each element of Keyword theKey's keyword[] string array,-
@@ -58,7 +56,7 @@ public class SentenceParser {
 					break;
 				}//if
 			}//forS
-
+			break;
 		case CONTAINS: 	
 			search://search break label
 			//for each element of Keyword theKey's keyword[] string array,-
@@ -73,11 +71,27 @@ public class SentenceParser {
 					}//if
 				}//forR
 			}//forS
-		
+			break;
+		case EXACT:  //!@# This case was added to prevent bugs. Correct search method needed later. 	
+			search://search break label
+			//for each element of Keyword theKey's keyword[] string array,-
+			for(String s: theKey.getKeywords()){
+				//- and for each string element in "theStringArray" (i.e., the input string array)
+				for(String r : theStringArray){
+					if(s.equals(r)){
+						//Set Keyword result to this keyword
+						result=theKey;
+						break search;
+						
+					}//if
+				}//forR
+			}//forS
+		break;
 		//default
 		default:
 			//Keyword not given MatchType
 			System.out.println("Keyword not given MatchType");
+			break;
 		}//switch
 		
 		return result;		
@@ -95,8 +109,7 @@ public class SentenceParser {
 		for(String k: theResponse.getKeywords()){
 			for(int s=0;s<theStringArray.length;s++){
 				if(k.matches(theStringArray[s])){
-					int temp=randgen.nextInt(theResponse.getResponses().length-1);
-					finalResponse=theResponse.getResponses()[temp];
+					finalResponse=theResponse.getResponses()[0]; //!@#$ change note: randgen removed
 					break searchResponse;
 				}
 			}//s
@@ -152,13 +165,13 @@ public class SentenceParser {
 
 	// Supporting Methods
 
-	// ArrayIterator
-	private String ArrayIterator(String[] array) {
-		String result = "";
-		for (String s : array) {
-			result += s + " \n";
-		}
-		return result;
-	}// ArrayItereator
+//	// ArrayIterator
+//	private String ArrayIterator(String[] array) {
+//		String result = "";
+//		for (String s : array) {
+//			result += s + " \n";
+//		}
+//		return result;
+//	}// ArrayItereator
 
 }// class
