@@ -9,4 +9,5 @@ public interface Responder
     void readConfigFile();
 
     String respond( String inputSentence );
+    
 }

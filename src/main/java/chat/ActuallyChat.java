@@ -44,7 +44,7 @@ public class ActuallyChat implements Chat
         {
             String sentence = getSentence();
 
-            responder.respond( sentence );
+            System.out.println(responder.respond(sentence));
         }
     }
 }
