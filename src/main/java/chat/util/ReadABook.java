@@ -10,6 +10,11 @@ import java.util.StringTokenizer;
 import java.io.*;
 
 //
+/**
+ * 
+ * @author Sam
+ *
+ */
 public class ReadABook {
 	
 	//main method for reading the file and parsing each line

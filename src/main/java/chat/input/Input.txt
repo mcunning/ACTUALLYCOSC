@@ -52,3 +52,4 @@ food#word#contains#contains#1#[R]food\\no\\I like steak.\\1[R]food\\no-preferenc
 interesting#word#contains#contains#1#[R]interesting\\no-preference\\Tell me something about yourself?\\1
 warm#word#contains#contains#1#[R]warm\\no-preference\\I like the weather when it's like this, wonder why it can't be like this all the time.\\1
 hello|hi|hey#word#contains#contains#1#[R]hello|hi|hey\\no\\Hello.\\1[R]hello|hi|hey\\no\\Hi!\\1[R]hello|hi|hey\\no\\Greetings!\\1
+what#word#contains#contains#1#[R]what\\no-preference\\never mind|nothing\\1
