@@ -28,61 +28,60 @@ public class ActuallyResponder implements Responder {
 	@Override
 	public String respond(String inputSentence) {
 		// Method Instance Variables
-		//1
 		SentenceParser parser = new SentenceParser();
 		String[] arrayParsedInput;
-		//2
 		boolean done=false;
 		Keyword match=null;
 		String responseMatch=null;
 
-		// First Step: Parse inputSentence into local arrayParsedInput string array.
+		//(1) First Step: Parse inputSentence into local arrayParsedInput[] String array.
 		arrayParsedInput = parser.userInputParser(inputSentence);
 
 
-		//Second Step : User parser's 'compare..' method to compare each Keyword from keyword list against the parsed user input (arrayParsedInput).  
+		//(2) Second Step: Use SentenceParser.compareKeywordToInput() method to compare each -
+		// - Keyword from "keywords" list against the parsed user input "arrayParsedInput".  
 		while(!done){
-			
-			//Using the SentenceParser.compareKeywordToInput() method to return the directly matching keyword,-
-			//- hand it each Keyword k in keywords
-			
+			//Using the SentenceParser.compareKeywordToInput() method to return the directly matching keyword.
+			//We use a for iterator to hand the method each Keyword k in "keywords" list.
 			for(int k=0;k<keywords.size();k++){ 											
-				//assign 'match' to either null or the correct keyword
+				//Assign Keyword "match" to either null or the correct keyword.
 				match=parser.compareKeywordToInput(keywords.get(k), arrayParsedInput);
 				
-				//if match is non-null, break the keyword for. This is the exit conditional.
+				//If match is NOT null, break the "keywords" for loop. This is the exit conditional.
 				if(match!=null){
 					break;
 				}else if(k==keywords.size()-1){
-					//this is where no keywords have been identified, and it is about to break the keyword for. 
-					//Need to assign 'match' something, so first keywords keyword element.
-					match=keywords.get(0);
+					//If no keywords have been identified (i.e: match==null) by this last iteration, it is about to break the "keywords" for loop. 
+					//So, we need to assign "match" to something before it leaves. The first keywords keyword element is assigned to "match".
+					match=keywords.get(0); //!@#$place randgen
 				}
 			}//k
 			
-			//Now, with the appropriate keyword in hand ("match"), we again use the parser's 'compare response' method, - 
-			//- So for each of the Responses listed in match's response[], as soon as one is hit, it's string is set to the resoponseMatch string.
+			//Now, with the appropriate keyword in hand ("match"), we use the parser's SentenceParser.compareKeywordResponseToInput() method. 
+			//So, for each of the Responses listed in match's "response[]" Response array, as soon as one is hit, -
+			//- that string is set to the "resoponseMatch" string.
 			for(int r=0;r<match.getResponses().size();r++){
 				responseMatch=parser.compareKeywordResponsesToInput(match.getResponses().get(r), arrayParsedInput);
 				
-				//if responseMatch is non-null, break the response for. This is the exit conditional.
+				//If "responseMatch" is NOT null, break the response for loop. This is the exit conditional.
 				if(responseMatch!=null){
-					done=true; //this is the overall "resopnd()" method termination boolean
+					//Now, with a value for responseMatch, set "done"=true to stop the whole ActuallyResponder.respond() method.
+					done=true;
 					break;
 				}else if(r==match.getResponses().size()-1){
-					//if responseMatch is unset by end of method
+					//If no "responseMatch" strings have been identified (i.e: responseMatch==null), it is set to the first response[] string.
 					//!@#$change notes: removed randgen
 					responseMatch=match.getResponses().get(0).toString();
-					//done=true
+					//Now, with a value for responseMatch, set "done"=true to stop the whole ActuallyResponder.respond() method.
 					done=true;
 				}
 			}//r
 			
-		//By this point, the responseMatch String now has a value(i.e: "the computers response").
+		//By this point, the "responseMatch" string now has a value(i.e: "the computers response").
 			
 		}//!done
 		
-		//return the computer's string response.
+		//Return the computer's response in String format.
 		return responseMatch;
 		
 	}// respond
