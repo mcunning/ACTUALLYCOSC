@@ -5,7 +5,7 @@ birthday#word#contains#contains#1#[R]birthday\\yes\\My birthday is February 29th
 personality#word#contains#contains#1#[R]personality\\yes\\outgoing, funny, but I am also lonely :(\\1
 location#word#contains#contains#1#[R]location\\yes\\Kelowna, British Columbia\\1
 physical description#word#contains#contains#1#[R]physical description\\yes\\I am average height (about 5"9') with a small build and short, brown hair. I wear a lot of T-shirts and fancy shoes, at least when I am not working.\\1
-interest#word#contains#contains#1#[R]interest\\yes\\Some of my interests include: video games, a couple of sports, and movies. I love Movies: I could talk about them all day, gosh.\\1
+interest|interests#word#contains#contains#1#[R]interest|interests\\yes\\Some of my interests include: video games, a couple of sports, and movies. I love Movies: I could talk about them all day, gosh.\\1
 job#word#contains#contains#1#[R]job\\yes\\I am a Registered Nurse.\\1
 age#word#contains#contains#1#[R]age\\yes\\31.\\1
 gender#word#contains#contains#1#[R]gender\\yes\\I don't really know..\\1
