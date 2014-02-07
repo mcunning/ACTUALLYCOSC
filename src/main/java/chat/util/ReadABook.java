@@ -34,7 +34,7 @@ public class ReadABook {
 		QuestionFlag qFlag;
 		
 		//set the delimiters for splitting up each line according to the predefined syntax
-		String responseDelims = "[R]";
+		String responseDelims = "\\[R\\]";
 		String subresponseDelims = "\\\\";
 		String ORDelims = "[|]";
 		String subKeyDelims = "#";
@@ -52,12 +52,12 @@ public class ReadABook {
 				
 				
 				StringTokenizer st = new StringTokenizer(KeywordLine, responseDelims);
+				String[] responseSubStrings = KeywordLine.split( responseDelims );
 				
-				//initial split up of line
-				while (st.hasMoreTokens()) {
-			    	 subStrings.add(st.nextToken());
-			         //System.out.println(st.nextToken());
-			    }
+				for( int i = 0; i < responseSubStrings.length; i++ )
+				{
+					subStrings.add(responseSubStrings[ i ] );
+				}
 				
 				//Parse the initial keyword section
 				String[] keywordSection = subStrings.get(0).split(subKeyDelims);
